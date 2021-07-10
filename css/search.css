@@ -1,0 +1,45 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+#search {
+	height: 45px;
+	margin: 17px auto 0;
+	overflow: hidden;
+	position: relative;
+	width: 257px;
+	border: 2px solid #034769;
+}
+label {
+  background: #888888;
+	cursor: pointer;
+	font-size: 34px;
+	padding: 2px 5px;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+}
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+input[type=text] {
+  background: #fff none repeat scroll 0 0;
+	border: medium none;
+	color: #2c3e50;
+	font-size: 18px;
+	padding: 11px 10px;
+	position: absolute;
+	right: -265px;
+	transition: right 2s ease 0s;
+	width: 198px;
+	z-index: -1;
+}
+input[type=checkbox]:checked ~ input[type=text] {
+  right: 63px;
+  z-index: 0;
+}
